@@ -1,0 +1,11 @@
+---
+Name: fartconfig
+---
+Page_Controller:
+  extensions:
+    - FartScrollExtension
+FartScrollExtension:
+  environmentTypes:
+    - dev
+    - test
+  speed: 100
