@@ -12,4 +12,4 @@ FartScrollExtension:
   environmentTypes:
     - dev
     - test
-  speed: 100
+  speed: 200
