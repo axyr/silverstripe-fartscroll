@@ -1,11 +1,17 @@
 <?php
 
-class FartScrollExtension extends Extension {
-	
-	function onAfterInit() {		
-		if(in_array(Director::get_environment_type(), Config::inst()->get('FartScrollExtension', 'environmentTypes'))) {
-			Requirements::javascript('http://code.onion.com/fartscroll.js');
-			Requirements::customScript('fartscroll('.Config::inst()->get('FartScrollExtension', 'speed').');','Fart');
-		}
-	}
+/**
+ * Class FartScrollExtension
+ */
+class FartScrollExtension extends Extension
+{
+    function onAfterInit()
+    {
+        $environmentTypes = Config::inst()->get('FartScrollExtension', 'environmentTypes');
+        $speed = Config::inst()->get('FartScrollExtension', 'speed');
+        if (in_array(Director::get_environment_type(), $environmentTypes)) {
+            Requirements::javascript('http://code.onion.com/fartscroll.js');
+            Requirements::customScript('fartscroll(' . $speed . ');', 'Fart');
+        }
+    }
 }
