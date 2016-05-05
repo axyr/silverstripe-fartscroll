@@ -1,5 +1,4 @@
 #silverstripe-fartscroll
-=======================
 
 [![Scrutinizer](https://img.shields.io/scrutinizer/g/axyr/silverstripe-fartscroll.svg)](https://scrutinizer-ci.com/g/axyr/silverstripe-fartscroll/)
 [![Travis](https://img.shields.io/travis/axyr/silverstripe-fartscroll.svg)](https://travis-ci.org/axyr/silverstripe-fartscroll)
